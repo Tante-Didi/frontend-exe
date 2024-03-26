@@ -1,0 +1,22 @@
+/* External CSS*/
+.number1{
+  border:solid thin red;
+  font-size: large;
+  border-radius: 10px;
+
+
+}
+.number2{
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.number3{
+  box-shadow: inset
+    0 0 0 2em grey
+    0 0 0 4em white;
+  background-color: black;
+  color:white;
+  font-family: monospace;
+}
