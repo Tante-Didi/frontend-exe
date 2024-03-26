@@ -1,0 +1,52 @@
+* {
+  font-family: Raleway;
+  text-align: center;
+}
+body {
+  background-color: #F8F3DD;
+}
+
+h1{
+
+  text-align: left;
+}
+h1, h3 {
+  color:goldenrod ;
+}
+h3.colorbrown{
+  color: rgb(92, 86, 55);
+}
+
+.card1, .card2, .card3 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.0005;
+  width:38%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 20 auto;
+  background-color:#F8F3DD;
+  text-align: center;
+}
+
+  img{
+
+    box-sizing: border-box;
+    display: block;
+    width: 100%;/*     <----  שהתמונה תתפרס לכל אורך הקונטיינר    */
+  }
+
+
+  .card {
+    box-sizing: border-box;
+    width: 73%; /*    <---- שהתמונה תתפרס יפה מתחת לכותרת ולא תבצבץ מעבר או פחות       */
+      }
+
+      .faded {
+        list-style:none;  /*     <----דואג שהנקודות של הרשימה לא  יוצגו */
+
+      }
+      footer{
+        width: 38% ;
+      }
+
+ 
