@@ -1,0 +1,34 @@
+*{
+padding:space-around;
+text-align: center;
+box-sizing: border-box;
+font-size: 20px;
+
+}
+body{
+  background-color: #ebe5e5;
+}
+
+
+
+
+.greeting-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.0005;
+    max-width:80%;
+    border: solid 1px rgb(241, 240, 240);
+    border-radius: 10px;
+    margin:    auto;
+    padding: 100px 100px;
+    line-height: 2.6rem;
+   
+  
+  }
+
+  main{
+   
+    
+    max-width: 900px; /* Set a maximum width if needed */
+    max-height:800px;
+    margin: 150px auto; /* This centers the container horizontally */
+  }
