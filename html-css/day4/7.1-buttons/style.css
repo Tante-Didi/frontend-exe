@@ -1,0 +1,167 @@
+*{
+
+ box-sizing: border-box;
+
+}
+
+body{
+  background-color: rgb(42, 68, 107);
+  color:#fff;
+ 
+
+
+ 
+ .container {
+  border: 2px solid red;
+  padding:50px;
+  margin: auto;
+  width :38%;
+  position:relative
+ }
+
+ .container .h2div {
+  display: inline-block;
+  border: 2px solid blue;
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+  
+ }
+
+}
+h2{
+ 
+padding-left: 130px;
+  font-size: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight :450;/* עד כמה הכתב מוגדש*/
+}
+
+
+button.btnr1 {
+  display: inline-block;
+  font-size: 20px;
+  background-color:rgb(64, 128, 224);
+  color: #fff;
+  border: 2px solid  rgba(64, 128, 224, 0);
+  width:auto;
+  height:2hv;
+  padding: 10px 25px;
+  margin-right: 100px;
+ 
+ }
+ button.btnr1:hover{
+  background-color: rgb(50, 97, 168);
+ }
+
+
+
+ button.btns1 {
+   display: inline-block;
+  font-size: 15px;
+  border: 2px solid rgba(224, 200, 64, 0);
+  width:auto;
+  height:2hv;
+  padding: 10px 20px;
+  background-color:rgb(224, 200, 64);
+  color: #fff;
+ }
+ button.btns1:hover{
+  background-color: rgb(211, 173, 91);
+}
+
+
+
+
+
+ button.btnr2{
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid  rgba(47, 255, 92, 0);
+  border-radius: 40px;
+  width:auto;
+  height:2hv;
+  padding: 13px 18px;
+  margin-right: 100px;
+  background-color:rgb(49, 156, 76);
+  color: #fff;
+ }
+ button.btnr2:hover{
+  background-color: rgba(49, 156, 76, 0.651)}
+
+ button.btns2 {
+   display: inline-block;
+  font-size: 15px;
+  border: 2px solid  rgba(255, 47, 134, 0);
+  border-radius: 40px;
+  width:auto;
+  height:2hv;
+  padding: 7px 10px;
+  background-color:rgb(224, 64, 118);
+  color: #fff;
+ }
+ button.btns2:hover{
+  background-color: rgba(224, 64, 117, 0.815);}
+
+ button.btnr3 {
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid  rgb(243, 28, 28);
+  width:auto;
+  height:2hv;
+  padding: 10px 25px;
+  margin-right: 100px;
+  background-color:rgb(42, 68, 107);
+  color: #fff;
+
+ }
+ button.btnr3:hover{
+  background-color:  rgb(243, 28, 28)}
+
+
+ button.btns3 {
+   display: inline-block;
+  font-size: 15px;
+  border: 2px solid  rgb(168, 36, 135);
+  width:auto;
+  height:2hv;
+  padding: 10px 20px;
+  background-color:rgb(42, 68, 107);
+  color: #fff;
+
+ }
+ button.btns3:hover{
+  background-color:  rgb(168, 36, 135);}
+
+
+ button.btnr4 {
+  display: inline-block;
+  font-size: 20px;
+  border: 2px solid rgb(177, 156, 39);
+  border-radius: 40px;
+  width:auto;
+  height:2hv;
+  padding: 10px 25px;
+  margin-right: 100px;
+  background-color:rgb(42, 68, 107);
+  color: #fff;
+
+ }
+ button.btnr4:hover{
+  background-color: rgb(177, 156, 39);}
+
+
+ button.btns4 {
+   display: inline-block;
+  font-size: 15px;
+  border: 2px solid  rgb(33, 187, 166);
+  border-radius: 40px;
+  width:auto;
+  height:2hv;
+  padding: 7px 10px;
+  background-color:rgb(42, 68, 107);
+  color: #fff;
+
+ }
+ button.btns4:hover{
+  background-color:  rgb(33, 187, 166)}
