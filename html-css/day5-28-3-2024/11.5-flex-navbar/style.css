@@ -1,0 +1,59 @@
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin:0;
+}
+
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 499.9;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(45,73,106);
+}
+
+.logo{
+  /* Adjust width and height as needed */
+  
+  font-size: 16px;
+  font-weight:bold; 
+  width: 100px;
+  color: rgb(45,73,106);
+  justify-content:start;
+}
+
+header.main-container {
+  font-size: 14px;
+  padding: 10px;
+  background-color: #f0f0f0; /* Optional background color for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  
+  flex-grow: 100;
+  text-align: right; /* Aligns the list items to the right */
+  justify-content:end;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+ul li {
+  display: inline-block; /* Displays list items horizontally */
+  margin-left: 10px; /* Adjust the spacing between list items */
+ 
+}
+
+ul li a {
+  
+  text-decoration: none;
+  color: rgb(45,73,106)
+  /* Optional styles for list item links */
+}
