@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
+
+
+.box-child {
+  height: 200px;
+  width:200px;
+  background-color: blueviolet;
+  position: relative;
+}
+
+.box-child::after{
+content: "";
+background-color: red;
+position: absolute;
+top: 0;
+left:0;
+width: 50%;
+height: 100%;
+z-index: 1;
+
+
+}

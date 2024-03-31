@@ -12,6 +12,15 @@ body{
   color: rgb(45,73,106);
 }
 
+header.main-container {
+  
+  font-size: 14px;
+  padding: 10px;
+  background-color: #f0f0f0; /* Optional background color for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo{
   /* Adjust width and height as needed */
   
@@ -22,14 +31,6 @@ body{
   justify-content:start;
 }
 
-header.main-container {
-  font-size: 14px;
-  padding: 10px;
-  background-color: #f0f0f0; /* Optional background color for the navbar */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .navbar-container {
   
