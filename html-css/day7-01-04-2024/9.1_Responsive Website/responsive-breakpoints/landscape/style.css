@@ -1,0 +1,49 @@
+body {
+	background-color: green;
+	font-size: 36px;
+	color: transparent;
+}
+
+.portrait,
+.landscape.max-width {
+	display: none;
+}
+
+/* 
+Landscape - when ever our width is higher than our height
+*/
+@media only screen and (orientation: landscape) {
+	body {
+		background-color: yellow;
+		color: black;
+	}
+}
+
+@media only screen and (orientation: landscape) and (max-width: 800px) {
+	/* a comma stands for "or" */
+	/* @media only screen and (orientation: landscape), (max-width: 500px) { */
+	body {
+		background-color: pink;
+		color: black;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	.landscape.max-width {
+		display: block;
+		font-size: 58px;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	body {
+		background-color: blue;
+	}
+
+	.portrait {
+		display: block;
+		color: white;
+	}
+}
