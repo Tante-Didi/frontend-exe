@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 25vh; /*put them like slices in the middle*/
+  gap: 60px;
+  border 1px black solid;
+}
+
+.btn {
+  border: 4 px solid black;
+  padding: 15px 30px;
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  background-color: transparent;
+}
+
+/*-------------------------translateY--------------------*/
+.translateY-btn::after {
+  content: "Cool!";
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; /* do not put justify content*/
+  position: absolute;
+  padding: 15px 30px;
+  background-color: red;
+  height: 100%; /*will take the whole place width and height from its container= the btn*/
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(-90px);
+
+  /*0 in the Y axis is the element.negative number in the Y axis will take the red box above the element(positive number under the element)
+    */
+  transition: 0.5s ease-in;
+}
+
+.translateY-btn:hover::after {
+  transform: translateY(0);
+}
+/*- 
+שורה 41 TRANSITION ישמנו את מה שנדרש ,עכשיו נהפוך את המצב לחלק יותר עם 
+אחריו OVERFLOW- hidden parent container---*/
+
+/*-------------------------translateX--------------------*/
+
+.translateX-btn::after {
+  content: "";
+
+  position: absolute;
+  padding: 15px 30px;
+  background-color: blue;
+
+  height: 100%; /*will take the whole place width and height from its container= the btn*/
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-300px);
+  z-index: -1;
+  transition: all 0.5s ease-in;
+}
+
+.translateX-btn:hover::after {
+  transform: translateX(0px);
+}
+
+/*-------------------------Rotate--------------------*/
+
+.Rotate-btn::after {
+  content: "";
+
+  position: absolute;
+  padding: 20px 150px;
+  background-color: yellow;
+
+  height: 80%;
+  width: 100%;
+  top: -18px;
+  left: -275px;
+
+   
+
+  transform: rotateZ(120deg);
+  transition: 1s ease-in-out;
+  z-index: -1;
+}
+
+.Rotate-btn:hover::after {
+
+  transform: rotateZ(0);
+  left: (0);
+}
+
+/*------------------------Skew---------------------*/
+.Skew-btn{
+
+  transform: skew(-50deg,0deg);
+  transition:  all 1s ease-in-out;
+
+
+}
+.Skew-btn::after {
+  content: "";
+
+  position: absolute;
+  padding: 20px 25px;
+  background-color: rgb(155, 24, 122);
+
+  height: 0%;
+  width: 0%;
+  top: 0px;
+  left: 0px;
+
+  /* transform: Rotate(25deg); */
+
+  transform: Skew(0deg, -10deg);
+  transition: 1s ease-in-out;
+  z-index: -1;
+}
+
+.Skew-btn:hover::after {
+  /* transform: Rotate(180deg); */
+  transform: Skew(180deg, 180deg);
+  height: 100%;
+  width: 100%;
+}
+
+/*-----------------------Scale-------------------*/
+.Skew-btn::after {
+  content: "Scale";
+
+  position: absolute;
+  padding: 20px 25px;
+  background-color: rgb(10, 7, 9);
+
+  height: 0%;
+  width: 0%;
+  top: 0px;
+  left: 0px;
+
+  /* transform: Rotate(25deg); */
+
+  transform: Scale();
+  transition: 1s ease-in-out;
+  z-index: -1;
+}
+
+.Skew-btn:hover::after {
+  /* transform: Rotate(180deg); */
+  transform: Skew(180deg, 180deg);
+  height: 100%;
+  width: 100%;
+}

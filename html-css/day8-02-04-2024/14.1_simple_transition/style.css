@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(219, 209, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div.box {
+  /* parent container*/
+  background-color: rgb(250, 72, 226);
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+div.box::after {
+  /* child container*/
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(66, 66, 194);
+  transition: width 2s ease;
+}
+
+div.box:hover::after {
+  width: 0px;
+}

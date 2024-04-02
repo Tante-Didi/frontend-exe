@@ -1,12 +1,11 @@
-
-
+/* 
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
 
-/* Tooltip text */
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;}
@@ -32,4 +31,21 @@ a{
   text-decoration: none;
   color: blueviolet;
 
+} */
+
+a[data-tooltip] {
+  position: relative;
+  text-decoration: none;
+}
+
+a[data-tooltip]:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  font-size: 10px;
+  top: -22px;
+  left: 0;
+  padding: 5px;
+  width: max-content;
+  border-radius: 10px;
+  background-color: yellow;
 }
