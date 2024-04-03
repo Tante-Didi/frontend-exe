@@ -4,22 +4,18 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 25px; 
-}*/
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(236, 163, 179);
-  font-size: 5vw;
+  font-size: 5vw; /*<----changing the font size units to vh or vh will allow the font size browser to be responsive */
 }
 header {
   background-color: rgb(128, 118, 118) url
     ("https://picsum.photos/id/237/200/300") no-repeat center center/cover;
-  height: 100vh;
+  height: 100vh; /*<----changing the font size units to vh or vh will allow the font size browser to be responsive */
   padding: 2rem;
   padding-top: 0;
-  font-size: 2vw;
+  font-size: 2vw; /*<----changing the font size units to vh or vh will allow the font size browser to be responsive */
   display: flex;
   position: relative;
   text-align: center;
@@ -41,8 +37,8 @@ img {
 .child-header-container {
   display: flex;
   position: absolute;
-  flex-direction: column;
-  margin-left: -20rem;
+  flex-direction: column; /*<--why does the flex direction column not working??? */
+  margin-left: -20rem; /*<----good practice is using the rem units, he is relative to the html root element*/
 }
 
 /*----------------------------------------------------------

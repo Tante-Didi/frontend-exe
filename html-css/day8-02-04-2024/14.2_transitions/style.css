@@ -135,7 +135,7 @@ div {
 }
 
 /*-----------------------Scale-------------------*/
-.Skew-btn::after {
+.-btn::after {
   content: "Scale";
 
   position: absolute;
