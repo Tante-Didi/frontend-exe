@@ -33,8 +33,8 @@ div {
   position: absolute;
   padding: 15px 30px;
   background-color: red;
-  height: 100%; /*will take the whole place width and height from its container= the btn*/
-  width: 100%;
+  height: 20px; /*will take the whole place width and height from its container= the btn*/
+  width: 88px;
   top: 0;
   left: 0;
   transform: translateY(-90px);
@@ -97,66 +97,89 @@ div {
 .Rotate-btn:hover::after {
 
   transform: rotateZ(0);
-  left: (0);
+ 
 }
 
 /*------------------------Skew---------------------*/
+
+
+
 .Skew-btn{
-
-  transform: skew(-50deg,0deg);
+  background-color: transparent;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
   transition:  all 1s ease-in-out;
+  position:relative;
+  overflow:hidden;
 
 
+}
+
+.Skew-btn:hover{
+   transform: skew(-2deg,-10deg);
 }
 .Skew-btn::after {
   content: "";
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  padding: 20px 25px;
+  
+  
+  /* החלק שממנו יוצאת הצורה הסגולה מהמרכז של הכתב*/
+  height:0px;
+  width: 0px;
+  top: 50%;   
+  left: 50%; 
+  /* החלק שממנו יוצאת הצורה הסגולה מהמרכז של הכתב*/  
+  
+  
   background-color: rgb(155, 24, 122);
-
-  height: 0%;
-  width: 0%;
-  top: 0px;
-  left: 0px;
-
-  /* transform: Rotate(25deg); */
-
-  transform: Skew(0deg, -10deg);
-  transition: 1s ease-in-out;
-  z-index: -1;
+  transform: Skew(0px,10deg);
+  transition: all 1s ease;
+  
 }
 
 .Skew-btn:hover::after {
-  /* transform: Rotate(180deg); */
+ 
   transform: Skew(180deg, 180deg);
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /*-----------------------Scale-------------------*/
-.-btn::after {
+.Scale-btn::after {
   content: "Scale";
-
+  color: antiquewhite;
   position: absolute;
-  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   background-color: rgb(10, 7, 9);
 
-  height: 0%;
-  width: 0%;
-  top: 0px;
-  left: 0px;
-
-  /* transform: Rotate(25deg); */
-
-  transform: Scale();
-  transition: 1s ease-in-out;
-  z-index: -1;
-}
-
-.Skew-btn:hover::after {
-  /* transform: Rotate(180deg); */
-  transform: Skew(180deg, 180deg);
   height: 100%;
   width: 100%;
+  top: 0px;
+  left: 0px;
+  font-size: 14rem;
+
+
+
+  Scale:(2);
+  transition: 1.5s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.Scale-btn:hover::after {
+ 
+  Scale:(1);
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  font-size: 13px;
 }
