@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+section.main-container {
+  display: grid;
+  grid-gap: 1rem;
+  width: 600px;
+  grid-template-areas:
+    "red red red red "
+    "blue blue green green"
+    "blue blue purple1 purple2";
+  height: 500px;
+}
+
+.red-box {
+  grid-area: red;
+  text-align: center;
+  background-color: rgb(207, 17, 17);
+}
+.blue-box {
+  grid-area: blue;
+  text-align: center;
+  background-color: rgb(6, 35, 116);
+}
+
+.green-box {
+  grid-area: green;
+  text-align: center;
+  background-color: rgb(23, 207, 17);
+}
+.purple-box {
+  grid-area: purple1;
+  text-align: center;
+  background-color: rgb(70, 29, 124);
+}
+.purple-box2 {
+  grid-area: purple2;
+  text-align: center;
+  background-color: rgb(70, 29, 124);
+}
+
+.box {
+  /* height: 500px; */
+  /* width: 300px; */
+  border-radius: 10px;
+}
