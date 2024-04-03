@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 80rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 5rem 30rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+  The minmax() function is a CSS function frequently used in Grid Layout. The minmax() function accepts two arguments, a minimum size and a maximum size. It defines a size range greater than or equal to the min and less than or equal to the max.
+
+  In this example grid-auto-rows: minmax(15rem, auto);, it's being used to set the minimum and maximum size of grid rows in a CSS grid.
+
+  * The first argument 15rem means that the minimum height of the row must be 15rem. If the content is less than this, it will still occupy 15rem. rem is a relative unit in CSS, where 1rem is equal to the font size of the root element, here it is 10px.
+
+  * The second argument auto means that the maximum height of the row will be determined by the content inside it. If the content requires more than 15rem, the row will expand to fit it.
+
+  So, in essence, grid-auto-rows: minmax(15rem, auto); means each row will be at least 15rem tall, but if a row's content requires more space, the row will expand to accommodate it.
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 8rem 20rem;
+  /* grid-auto-rows: minmax(15rem, auto); */
+  gap: 1rem;
+  row-gap: 6rem;
+  background-color: #DF3457;
+  padding: 1rem;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+}

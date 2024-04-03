@@ -1,0 +1,47 @@
+section.main-container {
+  display: grid;
+  /* justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center; */
+  grid-gap: 1rem;
+
+  grid-template-areas:
+    "red red blue blue "
+    "green purple purple purple"
+    "yellow  yellow  yellow  yellow";
+}
+
+.red-box {
+  grid-area: red;
+  text-align: center;
+  background-color: rgb(207, 17, 17);
+}
+.blue-box {
+  grid-area: blue;
+  text-align: center;
+  background-color: rgb(6, 35, 116);
+}
+
+.green-box {
+  grid-area: green;
+  text-align: center;
+  background-color: rgb(23, 207, 17);
+}
+.purple-box {
+  grid-area: purple;
+  text-align: center;
+  background-color: rgb(70, 29, 124);
+}
+
+.yellow-box {
+  grid-area: yellow;
+  text-align: center;
+  background-color: rgb(235, 215, 38);
+}
+
+.box {
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+}

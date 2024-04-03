@@ -5,15 +5,16 @@
 }
 
 :root {
-  --light-theme-color: rgb(187, 185, 183);
+  --light-theme-color: rgb(248, 248, 248);
   --light-theme-background-color: rgb(41, 40, 40);
   --light-theme-font: sans-serif;
-  --light-theme-background-color-card: rgb(83, 80, 80);
+  --light-theme-background-color-card: rgb(163, 162, 162);
+   --light-theme-btn-background-color-card:
 
-  --dark-theme-color: rgb(230, 228, 228);
-  --dark-theme-background-color: rgb(134, 128, 128);
+  --dark-theme-color: rgb(0, 0, 0);
+  --dark-theme-background-color: rgb(59, 55, 55);
   --dark-theme-font: Arial;
-  -dark-theme-background-color-card: rgb(83, 80, 80);
+  -dark-theme-background-color-card: rgb(190, 190, 190);
 }
 
 body {

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 5rem 30rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  height: 40rem;
+
+  /** Aligns items along the cross-axis of the container */
+  align-content: center;
+  /* align-content: space-evenly; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: start; */
+  /* align-content: end; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  background-color: #DF3457;
+  padding: 1rem;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+}

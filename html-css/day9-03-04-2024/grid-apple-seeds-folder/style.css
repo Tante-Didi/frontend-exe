@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {  
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* 
+  Here, we define a grid on .grid-container using display: grid. The grid-template-columns and grid-template-rows properties are used to define the structure of the grid - in this case, a 2x2 grid. Each 'fr' unit represents a fraction of the available space in the grid container. gap property is used to create some space between the grid items.  
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* grid-template-areas */
+/* .grid-container {
+  display: grid;  
+  grid-template-areas:
+      "header header header"
+      "main main sidebar"
+      "footer footer footer";
+  gap: 10px;
+}
+
+.header { 
+  grid-area: header; 
+}
+
+.main { 
+  grid-area: main; 
+}
+
+.sidebar { 
+  grid-area: sidebar; 
+}
+
+.footer { 
+  grid-area: footer; 
+}
+
+.header, .main, .sidebar, .footer {
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+} */
+
+/* In this example, repeat(3, 1fr) creates 3 columns with equal widths. */
+/* .grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+} */
+
+/* 
+  Using grid-auto-rows and grid-auto-columns
+  You can use grid-auto-rows and grid-auto-columns to specify the size of the rows/columns that are created implicitly. 
+*/
+/* .grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100px;
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+} */
+
+/* 
+  Using grid-column and grid-row properties to span multiple cells
+  You can make an item span multiple cells using the grid-column and grid-row properties.
+*/
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.grid-item:nth-child(1) {
+  background-color: #9e9e9e;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+} */
