@@ -1,11 +1,14 @@
-section.main-container {
-  display: grid;
-  /* justify-items: center;
+body {
+  display: flex;
+  justify-items: center;
   align-items: center;
   justify-content: center;
-  align-content: center; */
+  align-content: center;
+}
+section.main-container {
+  display: grid;
   grid-gap: 1rem;
-
+  width: 600px;
   grid-template-areas:
     "red red blue blue "
     "green purple purple purple"
@@ -42,6 +45,6 @@ section.main-container {
 
 .box {
   height: 100px;
-  width: 300px;
+  /* width: 300px; */
   border-radius: 10px;
 }
