@@ -1,0 +1,111 @@
+:root {
+  --font-family: "Helvetica";
+  --font-color-grey: #313945;
+  --font-color-black: #0000;
+  --fon-color-sign: #333333;
+}
+body {
+  margin: 0;
+  font-family: Helvetica;
+  display: flex;
+}
+
+header {
+  color: white;
+  padding: 40px 60px 60px 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  position: absolute;
+  /* border: 40px solid #c4c4c4; */
+  background-color: #c4c4c4;
+  border: 29px solid #c4c4c4;
+  border-radius: 50px;
+}
+
+main {
+  margin: 161px 180px 0 0;
+  padding: 20px;
+  float: center;
+  width: 80%;
+  height: 80vh;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+aside {
+  margin: 161px 120px 0 0;
+  float: right;
+  width: 50%;
+  height: 80vh;
+  padding: 20px;
+  background-color: transparent;
+}
+
+h1 {
+  color: var(--fon-color-sign);
+  font-family: Helvetica;
+  font-size: 35px;
+  font-weight: 500;
+}
+h2 {
+  color: #757576;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: -400x;
+}
+li {
+  color: #757576;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.sign-up {
+  color: #717171;
+}
+label {
+  color: #666666;
+
+  justify-content: left;
+}
+input {
+  color: #e4e4e4;
+  border: solid 2px #e4e4e4;
+  border-radius: 8px;
+  width: 450px;
+  height: 35px;
+}
+a {
+  color: #a6a6a6;
+}
+.term {
+}
+.Privacy {
+  color: #717171;
+}
+.card {
+  font-family: Helvetica;
+}
+
+button.btn {
+  border: #111111 solid 2px;
+  background-color: #111111;
+  color: #f0f0f0;
+  border-radius: 25px;
+  width: 450px;
+  height: 40px;
+  font-size: 17px;
+}
+.last-part {
+  text-align: center;
+}

@@ -8,7 +8,7 @@ body {
 section.main-container {
   display: grid;
   grid-gap: 1rem;
-  width: 600px;
+  width: 100%;
   grid-template-areas:
     "red red red red "
     "blue blue green green"
