@@ -1,62 +1,111 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+:root {
+  --font-family: "Helvetica";
+  --font-color-grey: #313945;
+  --font-color-black: #0000;
+  --fon-color-sign: #333333;
 }
-
 body {
+  margin: 0;
+  font-family: Helvetica;
   display: flex;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  background-color: aqua;
-  gap: 50px;
 }
 
 header {
-  grid-area: red;
-
-  background-color: rgb(207, 17, 17);
-
-  height: 50px;
-  width: 100%;
-  background-color: #ffffff;
-  top: 0px;
-  margin: 0;
+  color: white;
+  padding: 40px 60px 60px 60px;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
+  position: absolute;
+  /* border: 40px solid #c4c4c4; */
   background-color: #c4c4c4;
-  width: 25px;
-  height: 25px;
+  border: 29px solid #c4c4c4;
   border-radius: 50px;
-  margin: 15px;
+}
 
-  left: 20px;
+main {
+  margin: 161px 180px 0 0;
+  padding: 20px;
+  float: center;
+  width: 80%;
+  height: 80vh;
+  padding: 20px;
+  background-color: transparent;
 }
 
 .container {
-  width: 100px;
-  height: 1000px;
-}
-
-.main {
-  grid-area: blue;
-  text-align: center;
-  background-color: rgb(6, 35, 116);
   display: flex;
-  border: solid 80px yellowgreen;
+  flex-direction: column;
   align-items: center;
-  width: 1500px;
-  height: 300px;
-  left: 70px;
-  margin: 100px auto;
+  text-align: center;
+  justify-content: center;
+}
+aside {
+  margin: 161px 120px 0 0;
+  float: right;
+  width: 50%;
+  height: 80vh;
+  padding: 20px;
+  background-color: transparent;
 }
 
-aside {
-  grid-area: green;
+h1 {
+  color: var(--fon-color-sign);
+  font-family: Helvetica;
+  font-size: 35px;
+  font-weight: 500;
+}
+h2 {
+  color: #757576;
+  font-weight: lighter;
+  margin-right: 270px;
+  margin-left: -400x;
+}
+li {
+  color: #757576;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.sign-up {
+  color: #717171;
+}
+label {
+  color: #666666;
+
+  justify-content: left;
+}
+input {
+  color: #e4e4e4;
+  border: solid 2px #e4e4e4;
+  border-radius: 8px;
+  width: 450px;
+  height: 35px;
+}
+a {
+  color: #a6a6a6;
+}
+.term {
+}
+.Privacy {
+  color: #717171;
+}
+.card {
+  font-family: Helvetica;
+}
+
+button.btn {
+  border: #111111 solid 2px;
+  background-color: #111111;
+  color: #f0f0f0;
+  border-radius: 25px;
+  width: 450px;
+  height: 40px;
+  font-size: 17px;
+}
+.last-part {
   text-align: center;
-  background-color: rgb(23, 207, 17);
-  border: solid 2px black;
 }
