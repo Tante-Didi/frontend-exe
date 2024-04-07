@@ -25,10 +25,10 @@ body {
 }
 .planet-mercury {
   border-radius: 50%;
-  width: 230px;
-  height: 110px;
+  width: 260px;
+  height: 125px;
   position: absolute;
-  left: 847px;
+  left: 920px;
   bottom: 95px;
   border: 1px dashed rgb(43, 187, 74);
   animation: animate1 3s linear infinite;
@@ -49,7 +49,7 @@ body {
   border-radius: 25rem;
   width: 20px;
   height: 20px;
-  left: 150px;
+  left: 180px;
   bottom: 95px;
   position: absolute;
 }
@@ -65,7 +65,7 @@ body {
   width: 450px;
   height: 110px;
   position: absolute;
-  left: 740px;
+  left: 800px;
   bottom: 95px;
   z-index: 5;
   animation: animate1 6s linear infinite;
