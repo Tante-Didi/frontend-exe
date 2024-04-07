@@ -1,0 +1,59 @@
+.html {
+  background-color: rgb(1, 2, 26);
+}
+
+.body {
+  /* display: flex;
+  position: relative; */
+  /* height: 100vh;
+  width: 100vw; */
+  background-color: rgb(1, 2, 26);
+}
+
+.solar-system-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  top: 30vh;
+  padding: 150px;
+}
+.sun {
+  height: 25vh;
+  width: 25vh;
+  background-color: yellow;
+  border-radius: 25rem;
+  position: absolute;
+}
+
+#mercury-orbit {
+  bottom: 50px;
+  display: flex;
+  position: relative;
+}
+.planet-mercury {
+  border: 1px dashed rgb(43, 187, 74);
+  border-radius: 50%;
+  width: 230px;
+  height: 110px;
+  position: absolute;
+  left: 847px;
+  bottom: 95px;
+  z-index: 5;
+}
+#venus-orbit {
+  bottom: 20px;
+  display: flex;
+  position: relative;
+}
+.planet-venus {
+  border: 1px dashed rgb(139, 41, 123);
+  border-radius: 50%;
+  width: 450px;
+  height: 110px;
+  position: absolute;
+  left: 740px;
+  bottom: 95px;
+  z-index: 5;
+}
