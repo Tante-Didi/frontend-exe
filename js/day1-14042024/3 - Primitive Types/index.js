@@ -6,16 +6,16 @@ console.log(firstName);
 const X = 5;
 const Y = 20;
 const sum = X + Y;
-console.log(sum);
+console.log(sum); //25
 
 //boolean numbers
 const fiveCats = true;
-console.log(fiveCats);
+console.log(fiveCats); //true
 
 //undefined variables
 let calculator;
-console.log(calculator);
+console.log(calculator); //undefined
 
 //Null value
 let results = null;
-console.log(results);
+console.log(results); //null

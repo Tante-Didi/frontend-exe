@@ -15,7 +15,7 @@ console.log(
     " , " +
     " and I enjoy eating " +
     myFavoritefood
-);
+); //My favorite color is Green ,  I love the movie Wonder ,  and I enjoy eating Persian food
 //Simple Math
 const a = 4;
 const b = 6;
@@ -26,7 +26,7 @@ console.log(
     " were " +
     result +
     " is the sum of a and b"
-);
+); //the sum of a and b is 10 were 10 is the sum of a and b
 //Day of the week
 const currentDayOfTheWeek = " Monday ";
-console.log(" today is " + currentDayOfTheWeek);
+console.log(" today is " + currentDayOfTheWeek); //today is  Monday
