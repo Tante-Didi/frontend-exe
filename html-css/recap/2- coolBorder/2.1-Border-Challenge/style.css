@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 50vh;
+}
+.decorative-border {
+  border: 5px solid pink;
+  border-radius: 10px;
+  background-color: blueviolet;
+  padding: 100px;
+  box-shadow: 5px 10px #f0a6d7;
+  position: relative;
+}
+.decorative-border::before {
+  content: "";
+  box-shadow: inset;
+}
+.decorative-border::after {
+  content: "";
+  border: dashed rgb(184, 184, 231) 6px;
+  border-radius: 20px;
+  position: absolute;
+}

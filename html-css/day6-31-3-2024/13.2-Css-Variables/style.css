@@ -5,20 +5,26 @@
 }
 
 :root {
-  --light-theme-color: rgb(248, 248, 248);
-  --light-theme-background-color: rgb(41, 40, 40);
-  --light-theme-font: sans-serif;
-  --light-theme-background-color-card: rgb(163, 162, 162);
-   --light-theme-btn-background-color-card:
+  --light-theme-background-color: #F0EEF0;
+  --light-theme-font-family: sans-serif;
+  --light-theme-font-color: #000000
+  --light-theme-background-color-card: #444345;
+  --light-theme-btn-font-color:#C6C4C6
+   --light-theme-btn-background-color-card:#020102
 
-  --dark-theme-color: rgb(0, 0, 0);
-  --dark-theme-background-color: rgb(59, 55, 55);
-  --dark-theme-font: Arial;
-  -dark-theme-background-color-card: rgb(190, 190, 190);
+
+  --dark-theme-background-color: #343334;
+  --dark-theme-font-family: sans-serif;
+  --dark-theme-font-color: #FFFFF7;
+  --dark-theme-background-color-card: #F0EEF0;
+  --dark-theme-btn-font-color:#5C5C50
+  --dark-theme-btn-background-color-card:#C8C8C8
+
+
 }
 
 body {
-  background-color: var(--light-theme-background-color);
+  /* background-color:#FFFF; */
 }
 
 div {
@@ -27,14 +33,15 @@ div {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: var(--light-theme-background-color);
-  color: var(--dark-theme-color);
+  background-color: var(--light-theme-background-color-card);
+  color: var(--light-theme-font-color);
   width: 35vw;
   height: 120vh;
   position: relative;
   margin-left: 50px;
   margin-top: 100px;
 }
+
 
 img {
   border-radius: 50%;
@@ -59,14 +66,36 @@ P {
   width: 17vw;
   height: 18vh;
 }
+button{
+   width: 15vw;
+  height: 4vh;
+  position: relative;
+  margin-left: 150px;
+  margin-bottom: 70px;
+  color:var(--light-theme-btn-font-color);
+   background-color: (--light-theme-btn-background-color-card);
+   border-radius: 5px;
 
-.dark-theme {
-  color: var(--dark-theme-background-color);
-  background-color: var(--dark-theme-background-color);
-  font-family: var(--dark-theme-font);
-
-  --dark-theme-color: rgb(236, 230, 230);
 }
+.dark-theme {
+  color: var(--dark-theme-font-color);
+  background-color: var(--dark-theme-background-color);
+  font-family: var(--dark-theme-font);}
+
+ .dark-theme div{
+
+background-color:var(--dark-theme-background-color-card);
+  
+
+ }
+.dark-theme button{
+color:var(--dark-theme-btn-font-color);
+  background-color:var(--dark-theme-btn-background-color-card);
+}
+  
+  
+  
+
 
 .card-container {
   /* background-color: var(--light-theme-background-color-card); */
