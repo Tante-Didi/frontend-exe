@@ -73,6 +73,7 @@ let isThisANumber = true; //0
 if (!isThisANumber == false) {
   console.log("this is true");
 }
+git;
 // if (isThisANumber) {
 //   console.log("this is true");
 // }
