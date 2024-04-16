@@ -30,3 +30,5 @@ console.log(
 //Day of the week
 const currentDayOfTheWeek = " Monday ";
 console.log(" today is " + currentDayOfTheWeek); //today is  Monday
+
+console.log("today is a beautiful day + ${currentDayofTheWeek}");

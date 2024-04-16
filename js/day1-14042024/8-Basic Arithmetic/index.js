@@ -77,8 +77,8 @@ if (number1 < -5 || number1 > 10) {
 }
 
 //12.Logical Not Operator
-let isThisANumber = true; //0
-if (!isThisANumber == false) {
+let isThisANumber = true; //הערך שלו אמת
+if (isThisANumber == false) {
   console.log("this is true");
 }
 git;
