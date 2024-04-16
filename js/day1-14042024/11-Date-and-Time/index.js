@@ -1,5 +1,13 @@
 //Dates & Times
 //1.Display Current Date and Time
+const event = new Date();
+
+console.log(event.toString());
+
+const currentDate = new Date();
+const utcString = currentDate.toUTCString();
+
+console.log(`${utcString} `);
 
 let month = new Date();
 
