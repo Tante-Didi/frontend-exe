@@ -52,7 +52,7 @@ for (let i = 0; i < questChallenges6.length; i++) {
   } else {
     console.log(`false - Quest Challenges are not above Threshold `);
   }
-}
+} //True - Quest Challenges are above Threshold,True - Quest Challenges are above Threshold,false - Quest Challenges are not above Threshold
 
 // 7. Discover the Quest with the Maximum Reward
 const questRewards7 = [50, 100, 75, 150];
@@ -62,40 +62,13 @@ for (let i = 0; i < questRewards7.length; i++) {
 }
 
 // // 8. Combine Enemy Powers for a Total Assault Value
-// const enemyPowers8 = [50, 80, 65, 90];
-// const enemyHealths8 = [80, 120, 60, 100];
+const enemyPowers8 = [50, 80, 65, 90];
+const enemyHealths8 = [80, 120, 60, 100];
 
-// // 9. Calculate Total Experience from Quest Matrix
-// const questExperienceMatrix9 = [
-//   [100, 200],
-//   [150, 175],
-//   [120, 250],
-// ];
+const enemyTotal = enemyPowers8.concat(enemyHealths8);
+let sumTotal = 0;
 
-// // 10. Find the Quest with Highest Experience in Each Category
-// const questExperienceMatrix10 = [
-//   [100, 200],
-//   [150, 175],
-//   [120, 250],
-// ];
-
-// // 11. Count High-Difficulty Quests in Each Category
-// const questDifficultyMatrix11 = [
-//   [5, 7],
-//   [8, 6],
-//   [9, 7],
-// ];
-
-// // 12. Sum of Rewards for High-Reward Quests by Category
-// const questRewardsMatrix12 = [
-//   [50, 200],
-//   [300, 175],
-//   [120, 500],
-// ];
-
-// // 13. Average Health of Enemies by Type
-// const enemyHealthMatrix13 = [
-//   [80, 120],
-//   [60, 90],
-//   [200, 150],
-// ];
+for (let i = 0; i < enemyTotal.length; i++) {
+  sumTotal = sumTotal + enemyTotal[i];
+}
+console.log(sumTotal);
