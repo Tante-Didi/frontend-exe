@@ -63,12 +63,12 @@ for (let i = 0; i < questRewards7.length; i++) {
 
 // // 8. Combine Enemy Powers for a Total Assault Value
 const enemyPowers8 = [50, 80, 65, 90];
-const enemyHealths = [80, 120, 60, 100];
+const enemyHealths8 = [80, 120, 60, 100];
 
-const enemyTotal = enemyPowers8.concat(enemyHealths);
+const enemyTotal = enemyPowers8.concat(enemyHealths8);
 let sumTotal = 0;
 
 for (let i = 0; i < enemyTotal.length; i++) {
-  sumTotal = sumTotal + enemyTotal[i];
+  sumTotal += enemyTotal[i];
 }
 console.log(sumTotal);
