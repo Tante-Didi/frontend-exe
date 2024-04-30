@@ -4,13 +4,13 @@ const name = "Daniela";
 const Age = 40;
 console.log(`My name is ${name} and I am ${Age} years old`);
 
-//2. Favorie Things
+//2. Favorite Things
 
 const myFavoriteColor = "Green";
 const myFavoriteMovie = "Wonder";
-const myFavoritefood = "Persian food";
+const myFavoriteFood = "Persian food";
 console.log(
-  `My favorite color is ${myFavoriteColor},I love the movie ${myFavoriteMovie},and I enjoy eatting ${myFavoritefood}`
+  `My favorite color is ${myFavoriteColor},I love the movie ${myFavoriteMovie},and I enjoy eating ${myFavoriteFood}`
 );
 
 //3.
