@@ -194,3 +194,10 @@ const quests = {
   2: { name: "Defeat the Dragon", difficulty: "Hard", reward: "500 gold" },
   3: { name: "Escort the Merchant", difficulty: "Medium", reward: "250 gold" },
 };
+function name(params) {
+  for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+      object[difficulty] > "Medium";
+    }
+  }
+}
