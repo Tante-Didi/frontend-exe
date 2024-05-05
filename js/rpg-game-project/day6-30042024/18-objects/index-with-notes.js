@@ -108,4 +108,83 @@ console.log("the average of health of all characters in the array " + average); 
 
 //5.
 console.log("---------------------5-----------------------");
-5.1;
+//5. merge 2 character Obj into 1 with the Spread Operator (...):can also be used to merge arrays into a new array.
+//const mergeCharactersArray = [...characters[0],...characters[1]]
+//console.log(mergeCharactersArray
+
+//"-------5-----create new obj results from  merge of 2 existing Objs-----"
+
+console.log(
+  "-------5.1----- merge of 2 existing Objs---Spread Operator-------------"
+);
+
+const character1 = {
+  name: "Eldrin",
+  attributes: { health: 100, mana: 50 },
+};
+
+const character2 = {
+  name: "Mira",
+  attributes: { health: 85, mana: 60 },
+};
+
+const mergeCreateNewOBjs = Object.assign(
+  {},
+  { ...character1 },
+  { ...character2 }
+);
+console.log(mergeCreateNewOBjs); //{ name: 'Eve', health: 1000, mana: 150 }
+
+console.log("-------5.2----- preventing modification--Object.freeze()---");
+Object.freeze(mergeCreateNewOBjs); //Object.freeze(name-of-the-obj) method , השמה.....................//.deepFreeze()שיטה שנשתמש במידה ונרצה להקפיא גם את הצאצאים של האובייקטים
+//FREEZE היא עוצרת שינויים ,הוספה ומחיקה ברמה השטחית
+mergeCreateNewOBjs["name"] = "Mike";
+mergeCreateNewOBjs["attributes"]["health"] = 150;
+
+// mergeCreateNewOBjs["attributes"]["name"]["kids-health"] = 150;
+
+console.log(mergeCreateNewOBjs); //{ name: 'Mira', attributes: { health: 150, mana: 60 } }  no new modification in a shallow level but no in the deeper
+
+console.log("-------5.3----- preventing modification--Object.seal()-");
+
+//Object.seal() new properties cannot be added, existing properties cannot be removed, their enumerability and configurability cannot be changed, and its prototype cannot be re-assigned. Values of existing properties can still be changed as long as they are writable.
+//השיטה חוסמת הוספה חדשה,הסרה של תוכן קיים,לא ניתן לשנות ספירה שלה ולא ניתן להשים מחדש את הפרוטוטייפ
+//כן אפשר-ערכים לפרופורטיס קיימים כן ניתן לשנות
+
+Object.seal(mergeCreateNewOBjs); //Object.freeze(name-of-the-obj) method , השמה
+
+mergeCreateNewOBjs["name"] = "Doly"; //אין שינוי שם
+mergeCreateNewOBjs["attributes"]["health"] = 155550; //healthיש שינוי הערך של  ת
+mergeCreateNewOBjs["attributes"]["health"] = {
+  subClass11: 99999,
+  subClass22: 99999,
+  subClass33: 99999,
+}; // יש שינוי הערך ממספר לאובייקט
+mergeCreateNewOBjs["class"] = {
+  subClass11: 111,
+  subClass22: 111,
+  subClass33: 111,
+}; //class אין הוספה של  ערך אובייקט
+delete mergeCreateNewOBjs["name"]; //  name  אין מחיקה ל
+
+console.log(mergeCreateNewOBjs);
+console.log("-------5.4---Object.isSealed()) -");
+console.log(Object.isSealed(mergeCreateNewOBjs)); //true
+
+console.log("-------5.5---Object.isFrozen()-");
+console.log(Object.isFrozen(mergeCreateNewOBjs)); //true
+//.6 a function --Object.keys(OBJ-name)--- that logs all property names && function  ---Object.values(OBJ-name)--that logs all value in the object
+console.log(
+  "-----------------------------6-----------------------------------"
+);
+const characterStats = {
+  name: "Eldrin",
+  class: "Mage",
+  level: 7,
+  health: 100,
+  mana: 200,
+};
+const logAllProperty = Object.keys(characterStats);
+console.log(logAllProperty); //[ 'name', 'class', 'level', 'health', 'mana' ]
+const logAllValues = Object.values(characterStats);
+console.log(logAllValues); //[ 'Eldrin', 'Mage', 7, 100, 200 ]
