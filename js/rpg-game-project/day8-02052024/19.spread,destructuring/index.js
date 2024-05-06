@@ -52,18 +52,51 @@ console.log(combineHeroQuests); /*[
   'Find the lost city'
 ]*/
 
-//5.Extracting Values from Nested Hero Objects
+//5.Extracting Values from Nested Hero Objects  nested properties -destructing
 console.log("---------------------5---------------------");
 const heroInfo = {
   name: "Legolas",
   equipment: {
-    first: "Bow of the Galadhrim",
-    second: "Elven dagger",
+    first5: "Bow of the Galadhrim",
+    second5: "Elven dagger",
     third: "Cloak of Lothlórien",
   },
 };
- {
-  equipment: { first, second },
+const {
+  equipment: { first5, second5 },
 } = heroInfo;
-console.log(heroInfo);
-//
+console.log(first5 + ", " + second5); // Bow of the Galadhrim, Elven dagger
+
+//.6 Merge Hero Objects  ...Spread
+console.log("---------------------6---------------------");
+const baseDetails6 = {
+  name: "Gandalf",
+  class: "Wizard",
+};
+
+const extraDetails6 = {
+  level: 25,
+  power: 100,
+};
+
+const merge = { ...baseDetails6, ...extraDetails6 };
+console.log(merge); //{ name: 'Gandalf', class: 'Wizard', level: 25, power: 100 }
+
+//.7 Expand Hero Skill
+console.log("---------------------7---------------------");
+const heroStats = {
+  name: "Legolas",
+  level: 20,
+  skills: ["Archery", "Sneaking", "Hand-to-hand combat"],
+};
+
+function expandHeroSkills(skills) {
+  const skill = ["jumping like a maniac"];
+  return { ...skillsFirst, ...skillssecond, ...skillsThired, ...skillsFour };
+}
+console.log({
+  ...skillsFirst,
+  ...skillssecond,
+  ...skillsThired,
+  ...skill,
+});
