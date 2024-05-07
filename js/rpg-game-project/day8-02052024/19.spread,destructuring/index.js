@@ -92,11 +92,11 @@ const heroStats = {
 
 function expandHeroSkills(skills) {
   const skill = ["jumping like a maniac"];
-  return { ...skillsFirst, ...skillssecond, ...skillsThired, ...skillsFour };
+  return { ...skillFirst, ...skillSecond, ...skillThired, ...skillFour };
 }
 console.log({
-  ...skillsFirst,
-  ...skillssecond,
-  ...skillsThired,
+  ...skillFirst,
+  ...skillsecond,
+  ...skillThired,
   ...skill,
 });
