@@ -30,7 +30,7 @@ let x = 1;
 }
 console.log(x);
 
-/*answer (c) first 2 and then 1 ,the variable x declared inside takes precedence over the variable x declared outside the block within the block's scope.*/
+/*answer (b) first 2 and then 1 ,the variable x declared inside takes precedence over the variable x declared outside the block within the block's scope.*/
 
 console.log(
   "--------------------------------------------------5---------------------------------------------------------"
@@ -67,13 +67,13 @@ function checkScope() {
 }
 console.log(checkScope()); //superNested קדימות הסוגריים ושירשור התשובה במעלה הזרם
 console.log(a); //global
-// last in first out
+//answer (A)
 console.log(
   "--------------------------------------------------7---------------------------------------------------------"
 );
 /*7.Which of the following statements about let and const are true?
 answer:(d) all the above and 
-I elaborate the explanation with Chat GPT for my own learning.
+I elaborate the explanation with Chat GPT for my won 
 a)Variables declared with let and const are block-scoped, meaning they are only accessible within the block in which they are defined.
 b) Variables declared with let can be updated (i.e., their value can be changed) but not re-declared within the same block scope. However, they can be re-declared in different block scopes.
 c) Variables declared with const must be initialized (assigned a value) during declaration. Once initialized, the value of a const variable cannot be changed.
