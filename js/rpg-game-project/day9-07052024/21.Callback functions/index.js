@@ -2,16 +2,17 @@ console.log("--------------------------1------------------------------");
 //Exercise 1:
 
 function processEnemies(enemies, callback) {
-  if (!Array.isArray(enemies)) {
+  if (!Array.isArray(enemies)) {// checks if enemies is not an existing array then throw the message
     throw new Error("Expected an array of enemies");
   }
-  //clone the enemies array to prevent mutating the original
+  //clone -deep copy- the enemies array to prevent mutating the original
+  // you making astring and then back to obj as a new deeper copy
   const newEnemies = JSON.parse(JSON.stringify(enemies));
 
   //use map to process each enemy with the callback
   return newEnemies.map((enemy, index) => {
-    //verify the enemy structure
-    if (enemy.hasOwnProperty("name") && enemy.hasOwnProperty("health")) {
+    //verify the enemy structure // the hasOwnProperty check if the property exist in the obj
+    if (enemy.("name") && enemy.hasOwnProperty("health")) {
       return callback(enemy);
     } else {
       throw new Error("Enemy at index ${index} is not in the right structure");
@@ -77,3 +78,13 @@ const quests = [
 const newEnemies = processEnemies(enemies, (enemy) => (enemy.health += 10));
 console.log(newEnemies);
 console.log("--------------------------3------------------------------");
+function processPlayers(playerObj,callback){
+
+}
+{id:'45e3e'
+name:"Player name",
+health:100,
+level:1,
+location:"forest",
+inventory:["sword","health potion"]
+}
