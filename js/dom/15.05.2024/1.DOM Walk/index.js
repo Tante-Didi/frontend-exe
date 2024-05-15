@@ -49,5 +49,5 @@ const div = myLiParent.nextElementSibling;
 //7.2 Access the first child of the div ( which is a <p> element)
 const p = div.firstElementChild;
 
-//7.3 update the text content of the paragraph to "Now I know how to traverse the DOM :D".
+//7.3 update the text content of the paragraph to "Now I know how to traverse the DOM :D".   עדכנו את הפיסקה האחרונה לכתוב מטה
 p.textContent = "Now I know how to traverse the DOM :D";
